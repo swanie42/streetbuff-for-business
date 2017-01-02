@@ -5,19 +5,19 @@
             <div class="col-sm-4">
                 <div class="well stat">
                     <div class="stat-value day-of-year" ng-bind="offersUsed"></div>
-                    <div class="stat-label">Offers Used</div>
+                    <div class="stat-label">Offers Redeemed</div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="well stat">
                     <div class="stat-value day-of-month" ng-bind="currentSpend"></div>
-                    <div class="stat-label">Current Spend</div>
+                    <div class="stat-label">Current Offers</div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="well stat">
                     <div class="stat-value week-of-year" ng-bind="weekOfYear"></div>
-                    <div class="stat-label">Week of Year</div>
+                    <div class="stat-label">Value Redeemed</div>
                 </div>
             </div>
         </div>
@@ -25,24 +25,42 @@
             <div class="col-sm-4">
                 <div class="well stat">
                     <div class="stat-value day-of-week" ng-bind="dayOfWeek"></div>
-                    <div class="stat-label">Day of Week</div>
+                    <div class="stat-label">Value Returned</div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="well stat">
                     <div class="stat-value week-year" ng-bind="weekYear"></div>
-                    <div class="stat-label">Week Year</div>
+                    <div class="stat-label">Additional Customers</div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="well stat">
                     <div class="stat-value hour-of-day" ng-bind="hourOfDay"></div>
-                    <div class="stat-label">Hour of Day</div>
+                    <div class="stat-label">Current Campaigns</div>
                 </div>
             </div>
         </div>
     </div>
     <div class="col-sm-6 special">
-        <div class="page-header"><h1>Go Faster Everyday</h1></div>
-        <i class="fa fa-dashboard super-awesome"></i></div>
+        <div class="page-header"><h1>Your Campaigns</h1></div>
+        <form class="form-group" action="index.html" method="post" style="padding: 0px 10%;">
+
+            <input type="text" class="form-control" name="Campaign" value="" placeholder="Campaign name">
+            <br>
+            <select name="Spend" class="form-control" placeholder="Reward Value">
+            <option value="reward" class="disabled">Reward Value</option>
+              <option value="$5">$5</option>
+              <option value="$10">$10</option>
+              <option value="$25">$25</option>
+              <option value="$50">$50</option>
+            </select>
+            <br>
+            <input type="text" class="form-control" name="Campaign" value="" placeholder="Campaign name">
+            <br>
+            <input type="text" class="form-control" name="Campaign" value="" placeholder="Campaign name">
+            <br>
+            <input type="submit" class="btn button btn-lg">
+
+        </form></div>
 </div>
